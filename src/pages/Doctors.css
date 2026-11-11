@@ -1,0 +1,484 @@
+
+/* ===================================
+   VIYA DENTAL - DOCTORS PAGE
+=================================== */
+
+.doctors-page {
+  width: 100%;
+  padding: 0 3.1% 0;
+  color: #19394b;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+/* INTRODUCTION */
+
+.doctors-intro {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 43px 15px 50px;
+  text-align: center;
+}
+
+.doctors-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 13px;
+  border: 1px solid #cce8ee;
+  border-radius: 30px;
+  background: #edf8fb;
+  color: #24465a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.doctors-eyebrow span,
+.doctor-availability span {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #32aaa6;
+}
+
+.doctors-intro h1 {
+  margin-top: 12px;
+  color: #19394b;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(34px, 4vw, 40px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.doctors-intro-description {
+  max-width: 560px;
+  margin: 10px auto 0;
+  color: #71849e;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.doctors-trust-badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  border: 1px solid #cce8ee;
+  border-radius: 25px;
+  background: #edf8fb;
+  color: #24465a;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.trust-badge svg {
+  color: #27aaa6;
+}
+
+/* DOCTOR GRID */
+
+.doctors-list-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+/* DOCTOR CARD */
+
+.doctor-card {
+  min-width: 0;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #dfe7ef;
+  border-radius: 14px;
+  box-shadow: 0 2px 5px rgba(25, 57, 75, 0.025);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(25, 57, 75, 0.08);
+}
+
+/* DOCTOR IMAGE */
+
+.doctor-image-wrapper {
+  width: 100%;
+  height: 255px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 9px;
+  background: #edf3f5;
+}
+
+.doctor-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.doctor-availability {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  min-height: 34px;
+  padding: 7px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #25445a;
+  font-size: 9px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* DOCTOR DETAILS */
+
+.doctor-card-details {
+  flex: 1;
+  padding-top: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.doctor-meta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.doctor-experience {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border: 1px solid #c9e8ee;
+  border-radius: 20px;
+  background: #edf8fb;
+  color: #24465a;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.doctor-experience svg {
+  color: #2caaa7;
+}
+
+.doctor-specialty {
+  color: #2daaa7;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.doctor-card-details h2 {
+  margin-top: 13px;
+  color: #19394b;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.doctor-qualification {
+  margin-top: 4px;
+  color: #22a5a2;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.doctor-description {
+  min-height: 48px;
+  margin-top: 8px;
+  color: #334a60;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* CLINICAL FOCUS */
+
+.clinical-focus {
+  width: 100%;
+  min-height: 130px;
+  margin-top: 12px;
+  padding: 14px 12px;
+  border: 1px solid #d4edf0;
+  border-radius: 10px;
+  background: #f3f9fb;
+}
+
+.clinical-focus h3 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #334c60;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.clinical-focus h3 svg {
+  color: #2caaa7;
+}
+
+.clinical-focus ul {
+  margin-top: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  list-style: none;
+}
+
+.clinical-focus li {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  color: #455a70;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.clinical-focus li svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: #2caaa7;
+}
+
+/* CONSULTATION BUTTON */
+
+.doctor-book-button {
+  width: 100%;
+  min-height: 39px;
+  margin-top: auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #c9e7ed;
+  border-radius: 7px;
+  background: #edf8fb;
+  color: #19394b;
+  font-size: 11px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.doctor-book-button:hover {
+  background: #19394b;
+  border-color: #19394b;
+  color: #ffffff;
+}
+
+/* GUIDANCE CTA */
+
+.doctor-guidance {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 185px;
+  margin: 50px auto 0;
+  padding: 30px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  border: 1px solid #c6e5ed;
+  border-radius: 13px;
+  background: #eaf6fa;
+}
+
+.guidance-content {
+  max-width: 620px;
+}
+
+.guidance-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #2daaa7;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.guidance-content h2 {
+  margin-top: 12px;
+  color: #19394b;
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.6px;
+}
+
+.guidance-content p {
+  margin-top: 8px;
+  color: #526980;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.guidance-actions {
+  flex-shrink: 0;
+}
+
+.guidance-book-button {
+  min-height: 44px;
+  padding: 0 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  border-radius: 7px;
+  background: #19394b;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.guidance-book-button:hover {
+  background: #08718a;
+}
+
+/* TABLET */
+
+@media (max-width: 950px) {
+  .doctors-page {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  .doctors-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .doctor-image-wrapper {
+    height: 240px;
+  }
+
+  .doctor-guidance {
+    padding: 25px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .doctors-page {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .doctors-intro {
+    padding: 35px 0 35px;
+  }
+
+  .doctors-eyebrow {
+    font-size: 8px;
+    letter-spacing: 0.2px;
+  }
+
+  .doctors-intro h1 {
+    font-size: 32px;
+  }
+
+  .doctors-intro-description {
+    font-size: 13px;
+  }
+
+  .doctors-trust-badges {
+    gap: 8px;
+  }
+
+  .trust-badge {
+    font-size: 9px;
+    padding: 7px 9px;
+  }
+
+  .doctors-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .doctor-card {
+    padding: 16px;
+  }
+
+  .doctor-image-wrapper {
+    height: 260px;
+  }
+
+  .doctor-card-details {
+    padding-top: 16px;
+  }
+
+  .doctor-card-details h2 {
+    font-size: 17px;
+  }
+
+  .doctor-description {
+    min-height: auto;
+  }
+
+  .clinical-focus {
+    min-height: 125px;
+  }
+
+  .doctor-book-button {
+    margin-top: 18px;
+    min-height: 44px;
+  }
+
+  .doctor-guidance {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 23px 18px;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .guidance-content h2 {
+    font-size: 21px;
+  }
+
+  .guidance-actions,
+  .guidance-book-button {
+    width: 100%;
+  }
+}

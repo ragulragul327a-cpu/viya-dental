@@ -1,0 +1,232 @@
+
+.site-header {
+  width: 100%;
+  height: 76px;
+  background: #f4f9ff;
+  position: relative;
+  z-index: 100;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+  padding: 0 4%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 250px 1fr auto;
+  align-items: center;
+  column-gap: 25px;
+}
+
+/* LOGO */
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+}
+
+.brand-icon {
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  color: #176b94;
+  background: #e9f4ff;
+  border-radius: 12px;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brand-text strong {
+  color: #236e93;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.brand-text span {
+  color: #007c79;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  margin-top: 3px;
+}
+
+.brand-text small {
+  color: #007c79;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  margin-top: 2px;
+}
+
+/* NAVIGATION */
+
+.nav-content {
+  display: contents;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(20px, 3vw, 42px);
+}
+
+.nav-link {
+  color: #414c56;
+  font-size: 13px;
+  font-weight: 650;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #176b94;
+}
+
+/* HEADER BUTTONS */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.nav-appointment {
+  min-height: 42px;
+  padding: 0 23px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #267697;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 3px 8px rgba(20, 83, 111, 0.15);
+  transition: 0.2s ease;
+}
+
+.nav-appointment:hover {
+  background: #155c7c;
+  transform: translateY(-1px);
+}
+
+.nav-account {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #075575;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #075575;
+  cursor: pointer;
+}
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+  .navbar {
+    grid-template-columns: 210px 1fr auto;
+    column-gap: 12px;
+    padding: 0 2.5%;
+  }
+
+  .nav-links {
+    gap: 17px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .nav-appointment {
+    padding: 0 15px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+  .site-header {
+    height: 70px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .brand-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-text strong {
+    font-size: 16px;
+  }
+
+  .mobile-menu-toggle {
+    display: grid;
+    place-items: center;
+  }
+
+  .nav-content {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 23px 22px;
+    background: #f4f9ff;
+    border-top: 1px solid #e1edf4;
+    box-shadow: 0 12px 20px rgba(20, 50, 70, 0.08);
+  }
+
+  .nav-content.nav-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+
+  .nav-actions {
+    justify-content: flex-start;
+  }
+
+  .nav-appointment {
+    flex: 1;
+  }
+}

@@ -1,0 +1,430 @@
+
+/* ========================================
+   VIYA DENTAL - FOOTER
+======================================== */
+
+.site-footer {
+  width: 100%;
+  background: #173748;
+  color: #d6e3eb;
+  font-family: "Inter", sans-serif;
+}
+
+/* MAIN FOOTER LAYOUT */
+
+.footer-main {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 52px 4.1% 48px;
+
+  display: grid;
+  grid-template-columns: 1.45fr 0.75fr 1fr 1.1fr;
+  gap: 45px;
+  align-items: start;
+}
+
+/* ========================================
+   BRAND COLUMN
+======================================== */
+
+.footer-brand {
+  min-width: 0;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 21px;
+}
+
+.footer-logo-icon {
+  width: 43px;
+  height: 43px;
+  border: 1px solid rgba(49, 203, 190, 0.35);
+  background: rgba(0, 133, 137, 0.16);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #49d0c5;
+}
+
+.footer-logo h2 {
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  line-height: 1.3;
+}
+
+.footer-logo span {
+  display: block;
+  color: #35c4ba;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  margin-top: 3px;
+}
+
+.footer-description {
+  max-width: 350px;
+  color: #c0d0da;
+  font-size: 12px;
+  line-height: 1.9;
+  margin-bottom: 19px;
+}
+
+/* CERTIFICATION TAGS */
+
+.footer-certifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.footer-certifications span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+
+  background: rgba(115, 177, 201, 0.13);
+  border-radius: 6px;
+
+  color: #e2edf3;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.footer-certifications svg {
+  color: #50d2c6;
+}
+
+/* SOCIAL LINKS */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.footer-socials a {
+  width: 33px;
+  height: 33px;
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  background: rgba(115, 177, 201, 0.14);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+  background: #087d86;
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   COMMON FOOTER COLUMNS
+======================================== */
+
+.footer-column {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-column h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #39c2b8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.footer-column h3 > span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #35c4ba;
+  flex-shrink: 0;
+}
+
+/* QUICK NAVIGATION */
+
+.footer-column > a {
+  color: #c3d2dc;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 9px;
+  transition: color 0.2s ease;
+}
+
+.footer-column > a:hover {
+  color: #4bd0c5;
+}
+
+.footer-column > a.footer-highlight {
+  color: #38c6bb;
+  font-weight: 600;
+}
+
+/* ========================================
+   WORKING HOURS
+======================================== */
+
+.footer-hours > p {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 12px;
+}
+
+.footer-hours strong {
+  color: #e7f0f5;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer-hours small {
+  color: #aebfc9;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.emergency-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.emergency-info > span {
+  color: #39c2b8;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.emergency-info a {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.priority-booking {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #3bc8bd;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.priority-booking svg {
+  flex-shrink: 0;
+}
+
+/* ========================================
+   CLINIC LOCATION & CONTACT
+======================================== */
+
+.footer-location {
+  gap: 0;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.footer-contact-item > svg {
+  flex-shrink: 0;
+  color: #40c9bf;
+  margin-top: 3px;
+}
+
+.footer-contact-item p {
+  color: #c5d3dc;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.footer-contact-item p small {
+  display: block;
+  color: #91aab8;
+  font-size: 10px;
+  line-height: 1.6;
+  margin-top: 2px;
+}
+
+.footer-contact-item a {
+  color: #e1edf3;
+  font-size: 11px;
+  line-height: 1.7;
+  transition: color 0.2s ease;
+  overflow-wrap: anywhere;
+}
+
+.footer-contact-item a:hover {
+  color: #45d0c5;
+}
+
+/* ========================================
+   BOTTOM COPYRIGHT BAR
+======================================== */
+
+.footer-bottom {
+  min-height: 58px;
+  padding: 15px 4.1%;
+
+  border-top: 1px solid rgba(191, 220, 232, 0.1);
+  background: rgba(8, 34, 48, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-bottom > p {
+  color: #91a6b3;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 13px;
+
+  color: #7893a2;
+  font-size: 10px;
+}
+
+.footer-legal a {
+  color: #a8bbc6;
+  transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+  color: #42c8bd;
+}
+
+.footer-legal span {
+  color: #3e7586;
+}
+
+/* ========================================
+   TABLET - 2 COLUMN LAYOUT
+======================================== */
+
+@media (max-width: 1000px) {
+  .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 42px 55px;
+    padding: 45px 5%;
+  }
+
+  .footer-description {
+    max-width: 380px;
+  }
+
+  .footer-bottom {
+    padding: 17px 5%;
+  }
+}
+
+/* ========================================
+   MOBILE - STACKED LAYOUT
+======================================== */
+
+@media (max-width: 600px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding: 39px 23px 35px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-description {
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 1.85;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 15px;
+  }
+
+  .footer-column > a {
+    margin-bottom: 11px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 19px 23px;
+  }
+
+  .footer-bottom > p {
+    font-size: 10px;
+  }
+
+  .footer-legal {
+    justify-content: flex-start;
+    gap: 9px;
+    font-size: 10px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 360px) {
+  .footer-main {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .footer-certifications {
+    gap: 6px;
+  }
+
+  .footer-certifications span {
+    font-size: 9px;
+    padding: 6px 8px;
+  }
+
+  .footer-bottom {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
